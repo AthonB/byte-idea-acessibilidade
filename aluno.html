@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>App do estudante · +Acessibilidade</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app" id="app">
+  <header class="head">
+    <div class="row">
+      <div class="brand sm"><span class="logo"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>+Acessibilidade</div>
+      <button id="big" class="aa" data-act="big" aria-label="Texto maior" aria-pressed="false">Aa</button>
+    </div>
+    <div class="stack" style="gap:6px"><h1 id="title" class="t"></h1><p id="status" class="live"></p></div>
+  </header>
+  <div id="banner" class="banner" role="status" hidden>Aula encerrada. O resumo e a transcrição estão em Revisar.</div>
+  <main id="main" class="main"></main>
+  <section id="quick" class="quick" aria-label="Avisar o professor">
+    <div class="kick">AVISAR O PROFESSOR</div>
+    <div><button data-act="repeat">Repetir</button><button data-act="slow">Mais devagar</button><button data-act="doubt">Tenho dúvida</button></div>
+  </section>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <nav id="nav" class="nav" aria-label="Menu do aplicativo"></nav>
+</div>
+<script src="js/common.js"></script>
+<script src="js/aluno.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrar na aula · +Acessibilidade</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="app pad stack" style="gap:18px">
+  <div class="brand"><span class="logo"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>+Acessibilidade</div>
+  <div style="margin-top:8px"><h1 style="font-size:32px;line-height:1.1">Entrar na aula</h1>
+  <p class="muted" style="font-size:17px;margin-top:6px">Digite o código que o professor mostrou na sala.</p></div>
+  <form id="f" class="stack" style="gap:18px" novalidate>
+    <div class="stack" style="gap:8px">
+      <label class="lbl" for="codigo">Código da aula</label>
+      <input id="codigo" class="field code" value="DT-2041" autocomplete="off" autocapitalize="characters" spellcheck="false">
+      <p id="err" class="err" role="alert" hidden></p>
+    </div>
+    <div class="stack" style="gap:8px">
+      <label class="lbl" for="nome">Seu nome (opcional)</label>
+      <input id="nome" class="field" autocomplete="given-name" maxlength="30">
+    </div>
+    <div><h2 style="font-size:18px">Meus recursos</h2><p class="muted small">Você pode mudar isso a qualquer momento.</p></div>
+    <div>
+      <label class="opt"><span><b>Legenda em tempo real</b><small>A fala do professor vira texto</small></span><input type="checkbox" name="res" value="legenda" checked></label>
+      <label class="opt"><span><b>Descrição por áudio</b><small>Slides, gráficos e imagens</small></span><input type="checkbox" name="res" value="descricao"></label>
+      <label class="opt"><span><b>Escrever e falar</b><small>Você digita, a mensagem vira voz</small></span><input type="checkbox" name="res" value="escrever"></label>
+      <label class="opt"><span><b>Texto maior</b><small>Letras ampliadas na tela</small></span><input type="checkbox" name="res" value="grande" checked></label>
+      <label class="opt"><span><b>Tradutor para Libras (VLibras)</b><small>Widget gratuito do Governo Federal para traduzir textos para Libras</small></span><input type="checkbox" name="res" value="libras" checked></label>
+    </div>
+    <button class="btn" type="submit">Entrar na aula</button>
+    <p class="fine">Suas escolhas de acessibilidade são tratadas como dados sensíveis (LGPD). Nesta demonstração, nada sai do seu navegador.</p>
+  </form>
+  <a class="btn ghost" href="professor.html">Sou professor</a>
+</main>
+<script src="js/common.js"></script>
+<script src="js/entrar.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel do professor · +Acessibilidade</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="prof">
+  <aside class="side">
+    <div class="stack" style="gap:4px">
+      <div class="brand sm"><span class="logo"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>+Acessibilidade</div>
+      <span class="muted small">Painel do professor</span>
+    </div>
+    <nav id="nav" aria-label="Menu do professor"></nav>
+    <div class="spacer"></div>
+    <div class="codebox"><span class="muted small">Código da aula</span><b id="code"></b></div>
+    <button id="end" class="btn dark" data-act="end"></button>
+    <button class="btn ghost" data-act="new">Nova aula</button>
+  </aside>
+  <main id="pmain" class="pmain"></main>
+</div>
+<div id="toast" class="toast" role="status" hidden style="position:fixed;bottom:16px;left:50%;transform:translateX(-50%)"></div>
+<script src="js/common.js"></script>
+<script src="js/professor.js"></script>
+</body>
+</html>
